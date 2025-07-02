@@ -75,7 +75,7 @@ public class FabricPlatform implements Platform {
     }
 
     public void sendMessage(Player player, String message) {
-        ((ServerPlayerEntity) player.getPlayer()).sendMessage(toNative(mm(message)));
+        ((ServerPlayerEntity) player.getPlayer()).sendMessage(toNative(mm(message)), false);
     }
 
     public String getName(Player player) {
